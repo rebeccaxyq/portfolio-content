@@ -1,0 +1,58 @@
+.currentpage{
+    border: 5px solid black;
+}
+
+/* nav a .currentpage{
+    border: 5px solid black;  
+} */
+.container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+  
+    /* grid-template-rows: repeat(4, 300px); */ 
+  }
+.container img{
+    border: 5px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: inline;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+.container figcaption {
+    margin: 10px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    border: 1px dotted orangered;
+    background-color: lightblue;
+    text-align: center;
+    
+}
+
+  
+img:hover, img:focus {
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+a:hover, a:focus{
+    box-shadow: 10px 10px 5px greenyellow
+}
+
+
+.skip a{
+    position: absolute;
+    top:-40px; 
+    /* making it invisiable  */
+    z-index:1;
+    color: black;
+}
+
+.skip a:focus{
+    position: aboslute;
+    top: 0;
+    color:black;
+}
