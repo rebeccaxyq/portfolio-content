@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="icon" href="images/VSCO_Face.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +16,10 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-7WHZ3WCMLV');
 </script>
 <script src="https://kit.fontawesome.com/c99f15a15f.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
   <a class="skip" href="#main">
     Skip to content
@@ -41,26 +40,30 @@
     </nav>
     </header>
 
-    <main id="contact-main">w
+    <main id="contact-main">
            <!-- modify this form HTML and place wherever you want your form -->
             <form action="https://formspree.io/f/mlevoagj" method="POST" >
-                <fieldset class = contact_container>
+                <fieldset class = "contact_container">
                 <legend>Say Hi!</legend>
+                <div class = "form-container"> </div>
                   <p class="errormsg" id="emailerrormsg">Please enter your email</p>
-                    <label> Your email:
+                    <label id="email"> Your email:
                     <input type="email" name="email" placeholder="Please enter your email" id = "email" required>
                     </label>
 
                     <p class="errormsg" id="messageerrormsg">Please enter a message</p>
-                    <label> Your message:
+                    <label id="label_message"> Your message:
                     <textarea name="message" placeholder="Type Something Here" id = "message" required></textarea>
                     </label>
-                    <!-- <input type= "submit" id="sumbit" value="Submit"> -->
-                    <input onclick="event.preventDefault(); checkForm()" type="submit" value="Submit">
-                    
+                    <input type= "submit" id="sumbit" value="Submit">
+                    <!-- <input onclick="event.preventDefault(); checkForm()" type="submit" value="Submit" id="sumbit">  -->
                 </fieldset>
             </form>
             <script src="./js/myJS.js"></script>
     </main>
+       <footer>
+        <a title="Yuqiao's LinkedIn Page" href="https://www.linkedin.com/in/yuqiaoxu/" target="_blank" class="linkedin"> <i class="fa-brands fa-linkedin fa-2x"></i></a>
+        <p>Yuqiao Xu &copy; 2022</p>
+      </footer>
 </body>
 </html>
