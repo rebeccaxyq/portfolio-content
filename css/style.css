@@ -177,7 +177,7 @@ grid-template-columns: 1fr;
 /* About Page Styling*/
 .aboutcontainer{
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
     margin: 10px;
     padding: 10px;
 }
