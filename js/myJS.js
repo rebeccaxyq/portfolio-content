@@ -17,3 +17,31 @@ function checkForm(){
  
   return false;
 }
+
+const text = document.querySelector(".fancy");
+const strText = text.textContent;
+const splitText = strText.split("");
+text.textContent= "";
+console.log(splitText);
+
+for(let i=0; i < splitText.length; i++){
+  text.innerHTML += "<span>"+splitText[i] + "<span>";
+}
+
+var char = 0;
+var timer = setInterval(onTick, 50);
+
+function onTick(){
+  const span = text.querySelectorAll('span')[char];
+  span.classList.add('fade');
+  char++
+  if(char === splitText.length) {
+    complete();
+    return;
+  }
+}
+
+function complete(){
+  clearInterval(timer);
+  timer = null;
+}
